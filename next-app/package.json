@@ -1,0 +1,37 @@
+{
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "contentlayer": "^0.3.4",
+    "date-fns": "^2.30.0",
+    "lucide-react": "^0.279.0",
+    "next": "latest",
+    "next-contentlayer": "^0.3.4",
+    "next-themes": "^0.2.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwind-merge": "^1.14.0"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "@types/react": "latest",
+    "@types/node": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "tailwindcss-animate": "^1.0.7",
+    "eslint": "latest",
+    "eslint-config-next": "latest"
+  }
+}

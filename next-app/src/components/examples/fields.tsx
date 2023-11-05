@@ -35,11 +35,11 @@ const Fields = () => {
         </div>
         <div className="col-span-1">
           <InputLabelWrapper label="Popover">
-            <Popover
+          <Popover
               side="bottom"
               align="center"
               content={
-                <div className="bg-white p-4 rounded-lg border border-gray-200 flex flex-col gap-2 shadow-2xl w-[200px]">
+                <div className="bg-white p-4 rounded-lg border border-gray-200 flex flex-col gap-2 shadow-2xl">
                   <h3 className="font-bold">This is a popover</h3>
                   <p className="text-gray-600 text-sm">
                     You can modify it to look the way you want, put anything

@@ -7,8 +7,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "aly/ui",
-  description: "Pure components without libraries",
+  title: "bolt",
+  description: "Simple UI HTML components for React",
 };
 
 export default function RootLayout({

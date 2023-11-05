@@ -1,5 +1,5 @@
 export const siteConfig = {
-    name: "aly/ui",
+    name: "bolt",
     url: "https://ui.aly.com",
     ogImage: "https://avatars.githubusercontent.com/u/52838813?v=4",
     description:

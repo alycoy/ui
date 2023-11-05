@@ -6,15 +6,17 @@ import { usePathname } from "next/navigation";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
+import { Switch } from "./ui/inputs/switch/simple-switch";
 
 export function SiteHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/90 backdrop-blur">
-      <div className="h-14 container flex items-center">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
-          <span className="text-lg font-bold">Aly</span>
+    <header className="sticky top-0 z-10 w-full border-b bg-background/90 backdrop-blur px-8">
+      <div className="h-14 flex items-center justify-between container">
+        <Link href="/" className="flex items-center space-x-1">
+          <img src="/bolt.png" alt={siteConfig.name} className="w-8 h-8" />
+          <span className="text-lg font-bold">Bolt</span>
         </Link>
 
         <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -30,7 +32,7 @@ export function SiteHeader() {
             Documentation
           </Link>
           <Link
-            href="/documentation/components"
+            href="/examples"
             className={cn(
               "transition-colors hover:text-foreground/80",
               pathname?.startsWith("/documentation/components")
@@ -38,8 +40,23 @@ export function SiteHeader() {
                 : "text-foreground/60"
             )}
           >
-            Components
+            Examples
           </Link>
+          <Link
+            href="/examples"
+            className={cn(
+              "transition-colors hover:text-foreground/80",
+              pathname?.startsWith("/documentation/components")
+                ? "text-foreground"
+                : "text-foreground/60"
+            )}
+          >
+            Templates
+          </Link>
+
+          <div className="bg-foreground/60 w-[1px] h-[20px]" />
+
+          <Switch />
         </nav>
       </div>
     </header>

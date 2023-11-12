@@ -8,7 +8,7 @@ interface Props {
 const InputLabelWrapper: FC<Props> = ({ label, children }) => {
   return (
     <div className="flex flex-col gap-2">
-      <label className="text-sm text-gray-600 font-medium leading-none">
+      <label className="text-sm text-foreground font-medium leading-none">
         {label}
       </label>
       {children}

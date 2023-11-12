@@ -17,6 +17,7 @@ const config: Config = {
       colors: {
         background: "rgb(var(--background) / <alpha-value>)",
         foreground: "rgb(var(--foreground) / <alpha-value>)",
+        border: "rgb(var(--border) / <alpha-value>)",
         "input-border": "rgb(var(--input-border) / <alpha-value>)",
         pale: {
           DEFAULT: "rgb(var(--pale) / <alpha-value>)",

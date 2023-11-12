@@ -1,6 +1,8 @@
 import React from "react";
 
 export const useLocalStorageState = <T,>(key: string, defaultValue: T) => {
+
+
   // Get the value from local storage or use the default value
   const storedValue = localStorage.getItem(key);
   const initialValue = storedValue ? JSON.parse(storedValue) : defaultValue;

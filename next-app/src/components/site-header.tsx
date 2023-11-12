@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Switch } from "./ui/inputs/switch/simple-switch";
+import { ThemeSwitch } from "./theme-toggle";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -56,7 +57,7 @@ export function SiteHeader() {
 
           <div className="bg-foreground/60 w-[1px] h-[20px]" />
 
-          <Switch />
+          <ThemeSwitch />
         </nav>
       </div>
     </header>
